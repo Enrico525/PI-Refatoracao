@@ -1,0 +1,14 @@
+com\mycompany\pi\repository\InMemoryUsuarioRepository.class
+com\mycompany\pi\repository\ProdutoRepository.class
+com\mycompany\pi\controller\AuthController.class
+com\mycompany\pi\model\Usuario.class
+com\mycompany\pi\repository\UsuarioRepository.class
+com\mycompany\pi\repository\InMemoryProdutoRepository.class
+com\mycompany\pi\config\AppConfig.class
+com\mycompany\pi\service\AuthService.class
+com\mycompany\pi\model\Produto.class
+com\mycompany\pi\PiWebApplication.class
+com\mycompany\pi\service\ProdutoService.class
+com\mycompany\pi\controller\AuthController$LoginRequest.class
+com\mycompany\pi\controller\ProdutoController.class
+com\mycompany\pi\MainTestes.class
