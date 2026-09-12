@@ -51,6 +51,17 @@ public class ProdutoService {
         }
     }
 
+    /*
+     * Calcula o valor total do estoque de um produto.
+     * Esta regra foi separada em um método próprio
+     * para facilitar a realização do teste unitário.
+     */
+    public double calcularValorTotalEstoque(Produto produto) {
+        validar(produto);
+
+        return produto.getPreco() * produto.getQuantidade();
+    }
+
     private void validar(Produto produto) {
 
         if (produto == null) {
@@ -63,9 +74,7 @@ public class ProdutoService {
                     "ID deve ser maior que zero.");
         }
 
-        if (produto.getNome() == null ||
-                produto.getNome().isBlank()) {
-
+        if (produto.getNome() == null || produto.getNome().isBlank()) {
             throw new IllegalArgumentException(
                     "Nome é obrigatório.");
         }
