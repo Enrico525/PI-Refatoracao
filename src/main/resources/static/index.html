@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="logo">
+            <span>PI</span>
+            <div>
+                <h1>Gestão de Produtos</h1>
+                <small>Sistema Web</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="cadastro-produto.html">Cadastrar</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <div>
+                <h2>Dashboard</h2>
+                <p>Bem-vindo ao sistema de gerenciamento de produtos.</p>
+            </div>
+
+            <a href="cadastro-produto.html" class="btn btn-primary">
+                + Novo produto
+            </a>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <div>
+                    <span>Total de produtos</span>
+                    <strong id="totalProdutos">0</strong>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <div>
+                    <span>Valor em estoque</span>
+                    <strong id="valorEstoque">R$ 0,00</strong>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⚠️</div>
+                <div>
+                    <span>Estoque baixo</span>
+                    <strong id="estoqueBaixo">0</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h2>Produtos recentes</h2>
+                    <p>Últimos produtos cadastrados no sistema.</p>
+                </div>
+
+                <a href="produtos.html" class="btn btn-secondary">
+                    Ver todos
+                </a>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaDashboard">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PI - Sistema Web de Gestão de Produtos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+

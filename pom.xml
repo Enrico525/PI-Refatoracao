@@ -1,3 +1,4 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -16,6 +17,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>PI Web Refatorado</name>
+    <description>Projeto Integrador - Sistema Web Refatorado</description>
 
     <properties>
         <java.version>17</java.version>
@@ -23,13 +25,11 @@
 
     <dependencies>
 
-        <!-- Spring Boot Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- JUnit para testes -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -50,3 +50,4 @@
     </build>
 
 </project>
+

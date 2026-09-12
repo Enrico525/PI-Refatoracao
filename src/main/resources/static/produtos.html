@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PI - Produtos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="logo">
+            <span>PI</span>
+
+            <div>
+                <h1>Gestão de Produtos</h1>
+                <small>Sistema Web</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html" class="active">Produtos</a>
+            <a href="cadastro-produto.html">Cadastrar</a>
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <section class="page-header">
+
+            <div>
+                <h2>Produtos</h2>
+                <p>Gerencie os produtos cadastrados no sistema.</p>
+            </div>
+
+            <a href="cadastro-produto.html" class="btn btn-primary">
+                + Novo produto
+            </a>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="pesquisaProduto"
+                    placeholder="Pesquisar produto..."
+                >
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaProdutos">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PI - Sistema Web de Gestão de Produtos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
